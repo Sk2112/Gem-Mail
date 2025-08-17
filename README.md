@@ -33,11 +33,16 @@ Gemmail is an AI-based email reply generator that helps users craft intelligent 
 
 ## 📷 Preview
 
-> _[Add screenshots or GIFs showing the "AI Reply" button and generated response]_  
-> _Example:_  
-> ![Gemmail Demo](path-to-your-demo.gif)
+1. Response using Ai-Reply Button injected in Gmail App.
+   <img width="1917" height="950" alt="image" src="https://github.com/user-attachments/assets/a18d7a6e-c745-45b8-a4df-016f28fd7b12" />
 
----
+2. Docker Image of Gem-mail using Docker Desktop
+   <img width="1912" height="1004" alt="image" src="https://github.com/user-attachments/assets/d90fd608-a352-4f8a-a9be-bbf2c6a7a24f" />
+
+3.Extension Embedded in Browser
+<img width="1919" height="694" alt="image" src="https://github.com/user-attachments/assets/ef166874-033a-4ade-8dcc-27a683baa57e" />
+
+
 
 ## 📂 Project Structure
 
@@ -52,4 +57,7 @@ Gemmail/
 │ ├── popup.html
 │ └── ...
 └── README.md
+
+
+
 
