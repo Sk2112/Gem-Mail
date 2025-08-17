@@ -39,24 +39,11 @@ Gemmail is an AI-based email reply generator that helps users craft intelligent 
 2. Docker Image of Gem-mail using Docker Desktop
    <img width="1912" height="1004" alt="image" src="https://github.com/user-attachments/assets/d90fd608-a352-4f8a-a9be-bbf2c6a7a24f" />
 
-3.Extension Embedded in Browser
+3. Extension Embedded in Browser
 <img width="1919" height="694" alt="image" src="https://github.com/user-attachments/assets/ef166874-033a-4ade-8dcc-27a683baa57e" />
 
 
 
-## 📂 Project Structure
-
-Gemmail/
-├── Gemmail Backend/ # Spring Boot Application
-│ ├── src/
-│ ├── pom.xml
-│ └── ...
-├── chrome-extension/ # Chrome Extension files
-│ ├── content.js
-│ ├── manifest.json
-│ ├── popup.html
-│ └── ...
-└── README.md
 
 
 
