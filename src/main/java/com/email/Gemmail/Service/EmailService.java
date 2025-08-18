@@ -3,13 +3,10 @@ package com.email.Gemmail.Service;
 import com.email.Gemmail.Entity.EmailRequest;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
-
 import java.util.Map;
-import java.util.Objects;
 
 
 @Service
@@ -27,6 +24,14 @@ public class EmailService {
         this.webClient = webClientBuilder.build();
     }
 
+
+    public String getGetGeminiKey() {
+        return getGeminiApiKey;
+    }
+
+    public String getGeminiUrl() {
+        return geminiApiUrl;
+    }
 
     public String generateEmailReply(EmailRequest emailRequest){
 
@@ -62,6 +67,8 @@ public class EmailService {
         try{
             ObjectMapper mapper= new ObjectMapper();
             JsonNode rootNode=  mapper.readTree(response);
+            System.out.println("Gemini api : "+geminiApiUrl);
+            System.out.println("Gemini key :"+getGeminiApiKey);
             return  rootNode.path("candidates").get(0).path("content").path("parts").get(0).path("text").asText();
         } catch (Exception e){
             return  "Error processing Request:"+e.getMessage();
