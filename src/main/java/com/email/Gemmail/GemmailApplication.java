@@ -8,7 +8,6 @@ public class GemmailApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(GemmailApplication.class, args);
-		System.out.println("Spring Boot Project Working.");
 	}
 
 }

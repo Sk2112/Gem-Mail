@@ -25,14 +25,6 @@ public class EmailService {
     }
 
 
-    public String getGetGeminiKey() {
-        return getGeminiApiKey;
-    }
-
-    public String getGeminiUrl() {
-        return geminiApiUrl;
-    }
-
     public String generateEmailReply(EmailRequest emailRequest){
 
         // Build the prompt
@@ -67,8 +59,6 @@ public class EmailService {
         try{
             ObjectMapper mapper= new ObjectMapper();
             JsonNode rootNode=  mapper.readTree(response);
-            System.out.println("Gemini api : "+geminiApiUrl);
-            System.out.println("Gemini key :"+getGeminiApiKey);
             return  rootNode.path("candidates").get(0).path("content").path("parts").get(0).path("text").asText();
         } catch (Exception e){
             return  "Error processing Request:"+e.getMessage();

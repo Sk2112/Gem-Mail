@@ -20,16 +20,11 @@ public class EmailController {
         String response  = emailService.generateEmailReply(emailRequest);
         return  ResponseEntity.ok(response);
     }
+
     @GetMapping("/")
     public String showHome(){
 
         return  "App is Successfully Started on  Server , Hit request from the Extension";
-
     }
 
-    @GetMapping("/cred")
-    public  String showCred(){
-
-        return  ("key used "+emailService.getGetGeminiKey()+"<br> Gemini APi key "+emailService.getGeminiUrl());
-    }
 }
