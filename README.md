@@ -4,6 +4,10 @@ Gemmail is an AI-based email reply generator that helps users craft intelligent 
 
 ---
 
+ Deployed on Vercel  https://gemmail.vercel.app/
+
+---
+
 ## 🚀 Features
 
 - ✨ AI-generated replies based on received email content
